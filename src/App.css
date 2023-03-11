@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+* {
+  padding: 0px;
+  margin: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.products {
+  justify-content: right;
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0px 120px;
+}
+
+img {
+  width: 100%;
+}
+
+.product {
+  width: 25%;
+  box-shadow: 0 3px 20px red;
+  margin: 0px 3px 4% 4%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.product img {
+  width: 90%;
+  object-fit: cover;
+  padding: 10px;
+}
+
+.product .poduct-detail {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+}
+
+.product .poduct-detail h6 {
+  font-size: 15px;
+}
+
+.product .poduct-detail span {
+  color: white;
+  background-color: green;
+  height: 20px;
+  border-radius: 2px;
+  align-items: center;
+  display: flex;
+  padding: 2px;
+  cursor: pointer;
+}
+
+h6,
+h5 {
+  margin: unset;
+}
+
+.navbar {
+  background-color: red;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+}
+
+.navbar a {
+  color: white;
+  margin: 0px 120px;
+}
+
+
+.card .card-detail {
+  display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+.card .card-detail span {
+  display: block;
+}
+.change-card-count{
+  display: flex;
+}
+.cards .card{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 50px;
+  box-shadow: 1px 1px 1px 1px rgb(rgb(118, 109, 109), green, blue);
+}
+.cards .card img{
+  width: 120px;
+  height: 120px;
+}
+.card-detail button{
+  background-color: #ff0000;
+  color:  white;
+  border: none;
+  padding: 5px;
+  border-radius: 2px;
+  margin: 3px;
+}
+.change-card-count  button{
+  width: 20px;
+  margin: 3px;
+}
+.total{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff0000;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
