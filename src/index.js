@@ -4,9 +4,7 @@ import App from './App';
 import Card from './commponent/Card'
 import { Link, Route, BrowserRouter, Routes } from 'react-router-dom'
 import {Provider} from 'react-redux'
-import {createStore} from 'redux'
-import Reducer from './commponent/Reducer'
-const store=createStore(Reducer);
+import store from './stateManagment/store/store'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

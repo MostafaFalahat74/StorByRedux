@@ -1,14 +1,11 @@
 import React from 'react'
 import logo from '../logo.svg'
 import { useDispatch, useSelector } from 'react-redux'
-function Card() {
-  const cart = useSelector((store) => store);
+const Card=()=> {
+  const cart = useSelector((store) => store?.product);
   const dispatch = useDispatch();
   console.log(cart)
-  // const getTotal=()=> cart.reduce(acc ,value,0){
-  //  const sum= acc+ value.price* value.quantity;
-  //  return sum;
-  // }
+
   const getTotal = cart.reduce((total, item ) => total + (item.quantity * item.price),0); 
   return (
     <div className='cards'>
@@ -34,7 +31,7 @@ function Card() {
         )
       }
       <div className='total'>
-        <p>
+        <p>         
           {getTotal}
         </p>
       </div>

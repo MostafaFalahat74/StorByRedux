@@ -5,7 +5,7 @@ import { type } from '@testing-library/user-event/dist/type';
 function Poducts() {
     const cart = useSelector((store) => store);
     const dispatch = useDispatch();
-   // console.log(cart)
+    // console.log(cart)
     return (
         <div className='products'>
             {
